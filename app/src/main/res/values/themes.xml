@@ -117,6 +117,13 @@
         <item name="android:background">@color/white</item>
         <item name="android:textColor">@color/chip_text</item>
         <item name="android:textColorPrimary">@color/text_gray</item>
-        <item name="dialogCornerRadius">16dp</item>
+        <item name="dialogCornerRadius">54dp</item>
+    </style>
+
+    <style name="CustomAlertDialogSmallCorners" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="android:textColorPrimary">@color/text_gray</item>
+        <item name="dialogCornerRadius">20dp</item>
     </style>
 </resources>

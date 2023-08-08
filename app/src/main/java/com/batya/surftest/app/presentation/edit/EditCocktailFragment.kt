@@ -94,7 +94,7 @@ class EditCocktailFragment : Fragment() {
     }
 
     private fun buildAlertDialog(title: String, message: String, onPositiveClicked: () -> Unit) {
-        val builder = AlertDialog.Builder(context, R.style.CustomAlertDialog)
+        val builder = AlertDialog.Builder(context, R.style.CustomAlertDialogSmallCorners)
         builder.setTitle(title)
         builder.setMessage(message)
         builder.setPositiveButton("Да") { _, _ ->
