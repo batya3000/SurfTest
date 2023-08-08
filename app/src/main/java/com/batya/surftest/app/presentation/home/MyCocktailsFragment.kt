@@ -7,7 +7,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -140,7 +139,7 @@ class MyCocktailsFragment : Fragment() {
                     ARG_ID to it
                 )
             )
-            Toast.makeText(context, "Clicked $it", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(context, "Clicked $it", Toast.LENGTH_SHORT).show()
         }
 
 
