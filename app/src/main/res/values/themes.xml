@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.SurfTest" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.SurfTest" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/text_title</item>
 
@@ -100,7 +100,7 @@
         <item name="strokeColor">@color/stroke_gray</item>
         <item name="strokeWidth">1dp</item>
         <item name="android:textColor">@color/chip_text</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">12sp</item>
         <item name="fontFamily">@font/didact_gothic_regular</item>
         <item name="chipCornerRadius">56dp</item>
         <item name="android:textAppearance">@style/IngredientChip</item>

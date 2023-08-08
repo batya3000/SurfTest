@@ -35,7 +35,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_camera"
+                    android:src="@drawable/item_photo"
                     android:layout_gravity="center"/>
             </androidx.cardview.widget.CardView>
 
@@ -189,7 +189,7 @@
                     android:layout_height="match_parent"
                     android:textColor="@color/primary"
                     android:text="Cancel"
-                    android:textSize="24dp"
+                    android:textSize="24sp"
                     android:background="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
