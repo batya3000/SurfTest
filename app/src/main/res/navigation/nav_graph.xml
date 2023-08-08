@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myCocktailsFragment">
+
+    <fragment
+        android:id="@+id/myCocktailsFragment"
+        android:name="com.batya.surftest.app.presentation.home.MyCocktailsFragment"
+        android:label="My cocktails"
+        tools:layout="@layout/fragment_my_cocktails">
+
+        <action
+            android:id="@+id/action_myCocktails_to_cocktailDetails"
+            app:destination="@id/cocktailDetailsFragment" />
+        <action
+            android:id="@+id/action_myCocktails_to_editCocktail"
+            app:destination="@id/editCocktailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailDetailsFragment"
+        android:name="com.batya.surftest.app.presentation.details.CocktailDetailsFragment"
+        android:label="Cocktail Details"
+        tools:layout="@layout/fragment_cocktail_details">
+        <action
+            android:id="@+id/action_cocktailDetails_to_editCocktail"
+            app:destination="@id/editCocktailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/editCocktailFragment"
+        android:name="com.batya.surftest.app.presentation.edit.EditCocktailFragment"
+        android:label="Edit Cocktail"
+        tools:layout="@layout/fragment_edit_cocktail">
+        <action
+            android:id="@+id/action_editCocktail_to_myCocktailsFragment"
+            app:destination="@id/myCocktailsFragment"
+            app:popUpTo="@id/myCocktailsFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+</navigation>
